@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Place</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
         <a href="index.html" class="navbar-brand">Pizza Place</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <!-- Checkbox for toggle -->
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="navbar-nav">
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </nav>
+    <!-- Navbar -->
+    <!-- Main section -->
     <section class="main-section">
       <div class="main-content">
         <h1>Welcome</h1>
@@ -30,139 +41,454 @@
         </p>
         <p>a unique dining experience with us</p>
         <div class="button-container">
-          <a href="#" class="button order-now">Order Now</a>  
+          <a href="#" class="button order-now">Order Now</a>
           <a href="#menu" class="button view-menu">View Menu</a>
         </div>
+      </div>
     </section>
-  
+    <!-- Main section -->
+    <!-- Mid photo section  -->
     <section class="bottom_strip_picture">
       <div class="bottom_strip_content">
         <div class="left_side">
           <div class="left_side_picture">
-            <img src="assets/interiors.jpg" alt="Restaurant Interior">
+            <img
+              src="assets/IMG_20240828_214751.jpg"
+              alt="Restaurant Interior"
+            />
           </div>
         </div>
         <div class="right_side">
           <div class="right_side_content">
             <h1 class="right_side_heading">Welcome to Pizza Place</h1>
-            <p class="right_side_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum aut id error, minima assumenda natus quia expedita dolor magnam voluptatem esse nesciunt cum commodi vitae? Magnam minima non atque ex odit voluptate corrupti a ea.</p>
+            <p class="right_side_para">
+              Pizza Place is all about great pizza made with fresh ingredients.
+              Whether you want a classic favorite or something new, we’ve got a
+              pizza for everyone. Our friendly spot is perfect for a quick meal
+              or a family gathering.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    
+    <!-- Mid photo section  -->
+
+    <!-- posters with photoshop deal section -->
     <section class="menu-section" id="menu">
       <h2>Our Menu</h2>
-
+      <section class="text-image-section">
+        <div class="text-image-container">
+          <div class="text-content">
+            <h2>Midnight Deal</h2>
+            <h3>12 am onwards Closing</h3>
+            <p>Free 1.5ltr coke with Large and Extra Large (Family) Pizza.</p>
+          </div>
+          <div class="image-content">
+            <img
+              src="assets/chickentikkapizza.jpeg"
+              alt="Descriptive Alt Text"
+            />
+          </div>
+        </div>
+      </section>
       <!-- Appetizers -->
       <div class="menu-category">
-        <h3>Appetizers</h3>
-        <div class="menu-grid">
-          <div class="menu-item">
-            <img
-              src="assets/bruschetta.jpg"
-              alt="Bruschetta"
-              class="menu-img"
-            />
-            <h4>Bruschetta</h4>
-            <p>Grilled bread topped with tomatoes, basil, and mozzarella.</p>
-            <span class="price">$8.99</span>
+        <h3>HOT DEALS</h3>
+        <section class="deals-section">
+          <div class="deal-box">
+            <img src="assets/deals/deal1.jpg" alt="Deal 1" />
           </div>
-          <!-- Add more appetizers here -->
-          <div class="menu-item">
-            <img
-              src="assets/garlic-bread.jpg"
-              alt="Garlic Bread"
-              class="menu-img"
-            />
-            <h4>Garlic Bread</h4>
-            <p>Warm, buttery bread infused with garlic and herbs.</p>
-            <span class="price">$5.99</span>
+          <div class="deal-box">
+            <img src="assets/deals/deal2.jpg" alt="Deal 2" />
           </div>
-        </div>
-        <a href="appetizers.html" class="btn-browse-more">Browse More</a>
-      </div> 
-
-      <!-- Main Courses -->
-      <div class="menu-category">
-        <h3>Signature Dishes</h3>
-        <div class="menu-grid">
-          <div class="menu-item">
-            <img
-              src="assets/spaghetti-carbonara.jpg"
-              alt="Spaghetti Carbonara"
-              class="menu-img"
-            />
-            <h4>Spaghetti Carbonara</h4>
-            <p>Classic pasta with pancetta, egg, and parmesan cheese.</p>
-            <span class="price">$14.99</span>
+          <div class="deal-box">
+            <img src="assets/deals/deal3.jpg" alt="Deal 3" />
           </div>
-          <!-- Add more main courses here -->
-          <div class="menu-item">
-            <img
-              src="assets/chicken-alfredo.jpg"
-              alt="Chicken Alfredo"
-              class="menu-img"
-            />
-            <h4>Chicken Alfredo</h4>
-            <p>
-              Creamy fettuccine pasta with grilled chicken and parmesan cheese.
-            </p>
-            <span class="price">$16.99</span>
+          <div class="deal-box">
+            <img src="assets/deals/deal4.jpg" alt="Deal 4" />
           </div>
-        </div>
-        <a href="signature.html" class="btn-browse-more">Browse More</a>
-      </div>
-
-      <!-- Desserts -->
-      <div class="menu-category">
-        <h3>Desserts</h3>
-        <div class="menu-grid">
-          <div class="menu-item">
-            <img src="assets/tiramisu.jpg" alt="Tiramisu" class="menu-img" />
-            <h4>Tiramisu</h4>
-            <p>
-              Traditional Italian dessert with layers of mascarpone cheese,
-              coffee, and cocoa.
-            </p>
-            <span class="price">$6.99</span>
+          <div class="deal-box">
+            <img src="assets/deals/deal5.jpg" alt="Deal 5" />
           </div>
-          <!-- Add more desserts here -->
-          <div class="menu-item">
-            <img
-              src="assets/cheese-cake.jpg"
-              alt="Cheesecake"
-              class="menu-img"
-            />
-            <h4>Cheesecake</h4>
-            <p>New York-style cheesecake with a berry compote.</p>
-            <span class="price">$7.99</span>
+          <div class="deal-box">
+            <img src="assets/deals/deal6.jpg" alt="Deal 6" />
           </div>
-        </div>
-        <a href="desserts.html" class="btn-browse-more">Browse More</a>
-      </div>
-
-      <!-- Drinks -->
-      <div class="menu-category">
-        <h3>Drinks</h3>
-        <div class="menu-grid">
-          <div class="menu-item">
-            <img src="assets/mint-tea.jpg" alt="Mint Tea" class="menu-img" />
-            <h4>Mint Tea</h4>
-            <p>Refreshing green tea brewed with fresh mint leaves.</p>
-            <span class="price">$4.99</span>
-          </div>
-          <!-- Add more drinks here -->
-          <div class="menu-item">
-            <img src="assets/lemon-juice.jpg" alt="Lemonade" class="menu-img" />
-            <h4>Lemonade</h4>
-            <p>Freshly squeezed lemons with a hint of mint.</p>
-            <span class="price">$3.99</span>
-          </div>
-        </div>
-        <a href="drinks.html" class="btn-browse-more">Browse More</a>
+          <a href="hotdeals.html" class="btn-browse-more">Browse More</a>
+        </section>
       </div>
     </section>
+
+    <!-- posters with photoshop deal section -->
+
+    <!-- 2 pizza deal -->
+    <section class="favorite-flavors">
+      <h2 class="favourite_heading">2 Pizzas Deals</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/chickentikkapizza.jpeg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Chicken Tikka</h3>
+            <p>Cheese with Grilled Chicken, Capsicum & Tomato Rings</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/chikenfajitapizza.jpeg" alt="Chicken Fajita Pizza" />
+          <div class="card-content">
+            <h3>Chicken Fajita Pizza</h3>
+            <p>Pizza with Chicken, Onion, Olives, Capsicum & Cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/chickencheesepizza.jpg" alt="Chicken Cheese Pizza" />
+          <div class="card-content">
+            <h3>Chicken Cheese Pizza</h3>
+            <p>Spicy Chicken Pizza with Capsicum & Lots of cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/Sicilianpizza.jpg" alt="Sicilian Pizza" />
+          <div class="card-content">
+            <h3>Sicilian Pizza</h3>
+            <p>Spicy Chicken, Onion, Green Chilli, Capsicum & Lots of cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mushroom-pizza.jpg" alt="mushroom-pizza" />
+          <div class="card-content">
+            <h3>Mushroom Pizza</h3>
+            <p>Chicken, Mushroom, Green chilli, Cheese & Capsicum</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/hawaiipizza.jpg" alt="Hawaii pizza " />
+          <div class="card-content">
+            <h3>Hawaii Pizza</h3>
+            <p>Chicken, Mozzarellla, Tomato Sauce, Onion & Lots of cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/hotspicypizza.jpg" alt="Hot Spicy Pizza" />
+          <div class="card-content">
+            <h3>Hot Spicy Pizza</h3>
+            <p>Spicy Chicken, Fresh Tomato, Onion, Capsicum & Lots of cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/salamipizza.jpg" alt="Salami Pizza" />
+          <div class="card-content">
+            <h3>Salami Pizza</h3>
+            <p>Tomato Sauce, Beef Sausages, Onion & Cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/margrettapizza.jpg" alt="Margretta Pizza" />
+          <div class="card-content">
+            <h3>Margretta Pizza</h3>
+            <p>Spicy Pizza with Tomato Sauce & Mozzarella Cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/veggie pizza.jpg" alt="Veggie Pizza" />
+          <div class="card-content">
+            <h3>Veggie</h3>
+            <p>Green peppers, Tomatoes, Onion, Corn, Olives & Mushroom</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mista-pizza.jpg" alt="Mista Pizza" />
+          <div class="card-content">
+            <h3>Mista</h3>
+            <p>Chicken, Mushroom, Green Chilli, Capsicum & cheese</p>
+            <p class="price">Starting From Rs. 990</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2 pizza deal -->
+    <!-- Single pizza rates seperated from the upper midnight deal -->
+    <section class="menu-section2" id="menu">
+      <section class="text-image-section2">
+        <div class="text-image-container2">
+          <div class="image-content2">
+            <img
+              src="assets/chickentikkapizza.jpeg"
+              alt="Descriptive Alt Text"
+            />
+          </div>
+          <div class="text-content2">
+            <h2>Single Pizza Rates</h2>
+            <h3>Chicken Tikka</h3>
+            <p>Cheese with Grilled Chicken, Capsicum & Tomato Rings</p>
+            <a href="#popup" class="add-btn">View Prices</a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Single pizza rates seperated from the upper midnight deal -->
+    <div id="popup" class="popup-container">
+      <div class="popup-content">
+        <a href="#" class="close-popup">&times;</a>
+        <div class="popup_heading">
+          <h2>Pizza Prices</h2>
+        </div>
+        <ul>
+          <li>Small:<span class="price2">Rs.580</span></li>
+          <li>Medium:<span class="price2">Rs.990</span></li>
+          <li>Large:<span class="price2">Rs.1390</span></li>
+          <li>Family:<span class="price2">Rs.1890</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Single pizza rates -->
+
+    <!-- Special deals -->
+    <section class="favorite-flavors">
+      <h2 class="favourite_heading">Special Pizza</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="assets/chickensupreme.jpg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Chicken Supreme</h3>
+            <p class="differall">
+              Special Chicken Cheese, Mushroom, Sausages, Tomato, Olives, Corn &
+              Lots of Chesse with Double Topping
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/Osolemio.jpg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Osolemio</h3>
+            <p class="differall">
+              Pizza with Chicken, Beef sausages, Onion, Olives, Capsicum &
+              Cheese
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/stuffedcrustkebabpizza.jpg"
+            alt="Chicken Tikka Pizza"
+          />
+          <div class="card-content">
+            <h3>Stuff Crust Kabab</h3>
+            <p class="differall">
+              Chicken, Green peppers, Fresh Tomato, Onion, Olives & Lots of
+              Cheese
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/stuffedcrust.jpg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Stuffed Crust</h3>
+            <p class="differall">
+              Spicy Chicken, Onion, Green Chilli, Capsicum & LOts Of Cheese
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/chickentikkapizza.jpeg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Malai Boti</h3>
+            <p class="differall">
+              Pizza with Cheese, MalaiBoti, Capsicum, Tomato Rings
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/pineapple_pizza.jpg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Pine Apple Special</h3>
+            <p class="differall">
+              Light Spicy Chicken, Pineapple, Sweet Corn, Tomato, Olives & Lots
+              of cheese
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/pizzaplacespecial.jpg" alt="Chicken Tikka Pizza" />
+          <div class="card-content">
+            <h3>Pizza Place Special</h3>
+            <p class="differall">
+              Sp. Grilled Chicken, Tomato Olives, G. pepper, Corn, Mushroom &
+              Lots of cheese or Choose your own topping
+            </p>
+            <p class="price">Starting From Rs. 1090</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Special deals -->
+
+      <!-- Extra topping deal -->
+      <div class="extra-toppings">
+        <h2 class="extra-toppings-heading">Extra Toppings</h2>
+        <div class="toppings-container">
+          <div class="topping-card">
+            <div class="topping-content">
+              <h3>Extra topping per pizza</h3>
+              <img src="assets/6915.jpg" alt="" />
+              <p class="topping-price">Rs. 100</p>
+              <button class="add-topping-btn">Add Topping</button>
+            </div>
+          </div>
+          <div class="topping-card">
+            <div class="topping-content">
+              <h3>Extra topping per pizza</h3>
+              <img src="assets/66933-OCOJDO-575.jpg" alt="" />
+              <p class="topping-price">Rs. 150</p>
+              <button class="add-topping-btn">Add Topping</button>
+            </div>
+          </div>
+          <div class="topping-card">
+            <div class="topping-content">
+              <h3>Extra topping per pizza</h3>
+              <img src="assets/6915.jpg" alt="" />
+              <p class="topping-price">Rs. 200</p>
+              <button class="add-topping-btn">Add Topping</button>
+            </div>
+          </div>
+          <div class="topping-card">
+            <div class="topping-content">
+              <h3>Extra topping per pizza</h3>
+              <img src="assets/66933-OCOJDO-575.jpg" alt="" />
+              <p class="topping-price">Rs. 250</p>
+              <button class="add-topping-btn">Add Topping</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Extra topping deal -->
+    <!-- Side menu -->
+    <section class="menu-section3">
+      <div class="menu-container3">
+        <div class="menu-category3">
+          <h2>Burger</h2>
+          <ul>
+            <li>Chicken Grill Burger<span>Rs.410</span></li>
+            <li>Zinger Burger<span>Rs.350</span></li>
+            <li>Chicken Burger<span>Rs.290</span></li>
+            <li>Jumbo Burger<span>Rs.370</span></li>
+            <li>Tower Burger<span>Rs.480</span></li>
+            <li>Shami Burger<span>Rs.180</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2>Sandwiches</h2>
+          <ul>
+            <li>Grilled Chicken Sandwich with Fries<span>Rs.410</span></li>
+            <li>Club Sandwich<span>Rs.380</span></li>
+            <li>Chicken Sandwich<span>Rs.380</span></li>
+            <li>French Fries Regular<span>Rs.160</span></li>
+            <li>French Fries 1 Plate Full<span>Rs.260</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2>Shawarma</h2>
+          <ul>
+            <li>Grill Bar B Q Shawarma<span>Rs.250</span></li>
+            <li>Shawarma without Cheese<span>Rs.220</span></li>
+            <li>Shawarma Platter<span>Rs.300</span></li>
+            <li>Zinger Pratha<span>Rs.300</span></li>
+            <li>Chapli Chicken Pratha<span>Rs.300</span></li>
+            <li>Tandoori Shawarma<span>Rs.320</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-container3">
+        <div class="menu-category3">
+          <h2 class="diff_from_above3">Chicken Menu</h2>
+          <ul>
+            <li>Nuggest 10 pieces<span>Rs.580</span></li>
+            <li>Chicken Wings 10 Pieces<span>Rs.580</span></li>
+            <li>Hotshot Plate<span>Rs.550</span></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2 class="diff_from_above3">Chicken Pieces</h2>
+          <ul>
+            <li>1 Pc. Chicken<span>Rs.220</span></li>
+            <li>3 Pc. Chicken<span>Rs.620</span></li>
+            <li>5 Pc. Chicken<span>Rs.1000</span></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2 class="diff_from_above3">BBQ Place</h2>
+          <ul>
+            <li>12 Pcs Seekh Kabab<span>Rs.1200</span></li>
+            <li>6 Pcs Chapli Kabab<span>Rs.800</span></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2 class="diff_from_above3">Chinese</h2>
+          <ul>
+            <li>Shashlik with Rice<span>Rs.750</span></li>
+            <li>Eggs Fried Rice<span>Rs.450</span></li>
+            <li>Chinese Fried Rice<span>Rs.550</span></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </div>
+
+        <div class="menu-category3">
+          <h2 class="diff_from_above3">Drinks</h2>
+          <ul>
+            <li>Regular Coke</li>
+            <li>500ml Coke</li>
+            <li>1.5 Liter Coke</li>
+            <li>Mineral Water ( Lrg )</li>
+            <!-- Add more items as needed -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side menu -->
+
+    <!-- address -->
     <section class="black_top_strip">
       <div class="black_strip_content">
         <div class="big_item">
@@ -171,46 +497,52 @@
             <p>Contact Us</p>
           </div>
           <div class="item">
-            <h1>Faisal town C block</h1>
+            <h1>Faisal town 749-C block</h1>
             <p>Lahore, Pakistan</p>
           </div>
           <div class="item">
             <h1>Open Monday to sunday</h1>
-            <p>1:00pm - 9:00am</p>
+            <p>12:00pm - 1:00am</p>
           </div>
         </div>
         <div class="right_strip">
           <div class="links3">
-           <!-- <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i>
-           </a> -->
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+            <a href="https://www.facebook.com/PizzaPlaceFaisalTown/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
+    <!-- address -->
+
+    <!-- contact form -->
     <section class="contact-section" id="contact">
       <h2>Contact Us</h2>
-
-      <!-- Contact Information -->
       <div class="contact-info">
         <p>
           Email:
-          <a href="mailto:example@restaurant.com">example@restaurant.com</a>
+          <a href="mailto:abdulqayyumsaief@gmail.com"
+            >abdulqayyumsaief@gmail.com</a
+          >
         </p>
         <p>Phone: <a href="tel:0300-4699158">0300-4699158</a></p>
       </div>
-
-      
-      <!-- Contact Section Wrapper -->
       <div class="contact-wrapper">
-        <!-- Google Map -->
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d530.3086586527296!2d74.303442208355!3d31.47468692541888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903fb7949f707%3A0x65940983829910f2!2sPizza%20Place!5e0!3m2!1sen!2s!4v1724818785112!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d530.3086586527296!2d74.303442208355!3d31.47468692541888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903fb7949f707%3A0x65940983829910f2!2sPizza%20Place!5e0!3m2!1sen!2s!4v1724818785112!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-
-        <!-- Contact Form -->
         <form class="contact-form">
           <h3>Get in Touch</h3>
           <div class="form-group">
@@ -229,5 +561,6 @@
         </form>
       </div>
     </section>
+    <!-- contact form -->
   </body>
 </html>
