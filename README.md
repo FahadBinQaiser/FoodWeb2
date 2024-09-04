@@ -1,6 +1,6 @@
 # Food Website for Pizza Place
 
-[Vercel Status](food-web2-pc57l72yg-fahad-bin-qaisers-projects.vercel.app)
+[![Vercel Status](https://vercel.com/fahad-bin-qaisers-projects/food-web2/deployments)](https://food-web2-five.vercel.app)
 
 ## Description
 
