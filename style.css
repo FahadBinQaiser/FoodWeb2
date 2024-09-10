@@ -842,7 +842,21 @@ li span {
 i:hover {
   color: yellow;
 }
-
+.order-item {
+  background-color: #fffaf0;
+  text-transform: uppercase;
+  font-family: 'raleway';
+}
+.order-item h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 30px;
+  color: #333;
+}
+.order-item h1 span {
+  color: #555;
+  font-family: 'Roboto';
+}
 /* Black strip above contact info */
 /* contact information */
 .contact-section {
