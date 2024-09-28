@@ -490,7 +490,6 @@ body {
 }
 
 .card-content {
-  padding: 15px;
   height: 200px; /* Set a fixed height */
   display: flex;
   flex-direction: column;
@@ -499,23 +498,54 @@ body {
 }
 
 .card-content h3 {
+  padding: 15px;
   margin: 0;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   color: #333;
 }
-
 .card-content p {
-  margin: 10px 0;
+  padding: 15px;
   letter-spacing: 1.4px;
   font-family: 'Roboto';
   font-size: 1em;
   color: #555;
-  max-height: 48px;
+  max-height: 60px;
+  
+}
+.bottom{
+  margin-bottom: 13px;
 }
 .card-content .differall {
   font-size: 0.8em;
   font-weight: 400;
+}
+.price-row {
+  margin-top: 13px;
+  padding:5px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'raleway', sans-serif;
+  font-size:0.8em;
+  height: 70px;
+  background-color: #333;
+  color: white;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+
+}
+.price-box .price2{
+  font-size:0.85em;
+  font-family:Roboto;
+}
+
+.price-box span:first-child {
+  font-weight: bold;
 }
 .extra-toppings {
   padding: 20px;
@@ -775,7 +805,7 @@ body {
   display: flex;
   font-size: 0.8em;
   justify-content: space-between;
-  color: #222;
+  color: white;
   font-weight: 600;
   font-family: 'raleway';
 }
@@ -846,6 +876,8 @@ i:hover {
   background-color: #fffaf0;
   text-transform: uppercase;
   font-family: 'raleway';
+  display: flex;
+  flex-direction: column;
 }
 .order-item h1 {
   font-size: 2.2rem;
@@ -853,9 +885,12 @@ i:hover {
   padding-top: 30px;
   color: #333;
 }
-.order-item h1 span {
+.order-item span {
   color: #555;
   font-family: 'Roboto';
+  font-size: 1rem;
+  font-family: Roboto;
+  text-align: center;
 }
 /* Black strip above contact info */
 /* contact information */
@@ -1105,6 +1140,7 @@ i:hover {
 .gallery img:hover::before {
   opacity: 1;
 }
+
 
 /* Gallery.html code */
 @media (max-width: 767px) {
@@ -1423,6 +1459,13 @@ i:hover {
 
   .btn:hover {
     background-color: #c7211b;
+  }
+  .order-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .order-item h1{
+    font-size: 1.4em;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1883,5 +1926,16 @@ i:hover {
 
   .btn:hover {
     background-color: #c7211b;
+  }
+  .order-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .order-item h1{
+    font-size: 1.7em;
+  }
+  .order-item span{
+    text-align: center;
+    font-size: 1.2em;
   }
 }
